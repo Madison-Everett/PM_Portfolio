@@ -1,597 +1,173 @@
 <!DOCTYPE html>
 <html>
- <head style="background-color:#33475b">
+ <head style="background-color:#ffffff">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Madison Everett</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <style>
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      
+      #myBtn:hover {
+        background-color: #c0bb6d;
+      }
+
+      * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+          </style>
   </head>
   <body>
-  <section style = "background-color: 	lavender;"class="section">
-    <div style = "background-color: 			rgba(85, 107, 47, 0.493);" class="box">
-    <nav style = "background-color: 		lavender;" class="navbar is-transparent" role="navigation" aria-label="dropdown navigation">
-        <div class="container">
-          <div id="navMenu" class="navbar-menu">
-            <div class="navbar-start" id="home">
-                <a class="navbar-item has-text-black-bis has-text-weight-bold " href="#AboutMe">
-                About Me
-              </a>
-              <a class="navbar-item has-text-black-bis has-text-weight-bold" href="#Creds">
-                Certifications
-              </a>
-              <div class="navbar-item has-dropdown is-hoverable has-text-black-bis has-text-weight-medium">
-                <a class="navbar-link has-text-black-bis  has-text-weight-bold" href="#Projects">
-                Projects
-               </a>
-              <div class="navbar-dropdown">
-            <a class="navbar-item has-text-weight-bold" href="#DevProjects">
-              Development Projects
-            </a>
-            <a class="navbar-item has-text-weight-bold" href="#PMProjects">
-              Project Management Projects
-            </a>
-            </div>
-          </div>
-        </div>
-            </div>
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <div class="buttons ">
-                  <a style = "background-color: 	rgba(218, 165, 32, 0.622);"class="button has-text-weight-bold is-rounded is-focused" href="https://github.com/sisterme3">Personal Github
-                      <br>
-                    <span class="icon">
-                        <figure">
-                        <img src="25231.png">
-                        </figure>
-                    </span>
-                  </a>
-                  <a style = "background-color: 	rgba(218, 165, 32, 0.622);"class="button has-text-weight-bold is-rounded is-focused" href="https://github.com/Madison-Everett">Professional Github
-                    <br>
-                    <span class="icon">
-                        <figure">
-                        <img src="25231.png">
-                        </figure>
-                    </span>
-                  </a>
-                  <a style = "background-color: 	rgba(218, 165, 32, 0.622);"class="button has-text-weight-bold is-rounded is-focused" href="Madison_Everett_Resume_2022.pdf"> Download Resume
-                      <br>
-                      <!----
-                    <span class="icon">
-                        <figure">
-                        <img src="Resume.jpeg">
-                        </figure>
-                    </span>
-                -->
-                  </a>
-                    <!----
-              <a style = "background-color: 	rgba(218, 165, 32, 0.622);"class="button has-text-weight-bold is-rounded is-focused" href="https://app.box.com/s/xnmy8t69o5n396hzu6c2272m9cc97j1r"> Work Samples
-                      <br>
-                       <!
-                    <span class="icon">
-                        <figure">
-                        <img src="briefcase.png">
-                        </figure>
-                    </span>
-                    -->
-                  </a>
-            
-                  <a href="https://www.linkedin.com/in/madison-everett-966071139/">
-                        <figure">
-                        <img src="174857.png">
-                        </figure>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-      </nav>
-      <br>
-      <br>
+    <button class="button is-medium" style = "background-color: rgb(247, 199, 209); color: rgb(242,71,103); "onclick="topFunction()" id="myBtn" title="Go to top"><strong>Back to Top</strong></button>
+
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
       
-    <div class="container">
-        
-        <div style = "background-color: 	lavender;" class="box">
-            <figure>
-                <img class="circular--square" src="Linkedin photo.png">
-                <div class="content is-large">
-                    <p class="title is-1 has-text-black-bis">Hello there!</p>
-                    <p class="subtitle is-3 has-text-black-bis">Welcome to my Professional Portfolio.</p>
-                </div>
-                 </figure>
-    </div>
-      </div>
-    </div>
-      <br>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
       
-    
-    <div style = "background-color: 		lightslategrey;" class="box">
-        <h1 class="title has-text-white-bis" id="AboutMe">About Me    <a class="button has-text-weight-medium has-text-black-bis is-rounded is-focused" id = "topbutton" href="#home" style="float: right; background-color: 	rgb(255, 194, 41);"> Back to Top</a></h1>
-  
-         <div style = "background-color: 		lavender;" class="card">
-            <div class="card-content">
-              <div class="content has-text-black-bis">
-                <p class="title is-5 has-text-black-bis">
-                    Nice to meet you! I’m Madison Everett!
-                </p>
-                <p class="title is-5 has-text-black-bis">
-                   I’m a native Nashvillian and a Computer Science and Mathematics alumni of Belmont University. Soon after graduating, I decided to start my career in Project Management at Vanderbilt University as a Project Consultant after realizing the passion that I have for helping people use technology to solve their everyday problems.
-                </p>
-                <p class="title is-5 has-text-black-bis">
-                    Since then, I have helped manage 10+ impactful projects within <a class = "has-text-link-dark is-underlined" href= https://www.vanderbilt.edu/aapsi/about_us/meet_the_team.php> Vanderbilt’s Process, Solutions, and Implementation (PSI)</a> team. One of the seven projects includes the implementation of the new cross-campus Electronic Research Administration Saas Project, VERA, which I helped manage in just under 2 years of working in my position.
-                </p>
-                <p class="title is-5 has-text-black-bis">
-                    Because of my growing passion and experience, I decided to hone my PM skills by not only practicing Project Management principles in my everyday work but by also studying Project Management through Google and PMI's certification programs. 
-                </p>
-                <p class="title is-5 has-text-black-bis">
-                   Thanks for reading and please enjoy my portfolio!
-                </p>
-              
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <div style = "background-color: 			lightslategrey;" class="box" >
-        <h1 class="title has-text-white-bis"  id="Creds">Certifications, Credentials, and Specializations   <a class="button has-text-weight-medium  has-text-black-bis is-rounded is-focused" id = "topbutton" href="#home" style="float: right; background-color: 	rgb(255, 194, 41);"> Back to Top</a></h1>
-        <h1 class="title is-5 has-text-white-bis"> Here are my current Certifications, Credentials, and Specializations! Click on the badge for a link to Credly. </h1>
-       <div  style = "background-color: 	lavender;" class="box" >
-        <br>
-
-       <div class="columns is-centered" >
-          <div style = "background-color: 	steelblue;" class="column has-text-centered has-text-white-bis" >
-            <p class="title is-5 has-text-white-bis has-text-centered">  Google Project Management Specialization</p>
-            <figure>
-              <a href="https://www.credly.com/badges/b52d28e8-a815-4146-9133-69282d8174bc?source=linked_in_profile">
-              <img src="Google_badge.png">
-                  <p class="title is-6 has-text-white-bis has-text-centered">Issued Dec 2021 - No Expiry</p>
-                </a>
-                </figure>
-          </div>
-          <div style = "background-color: 	chocolate;"class="column has-text-centered has-text-white-bis" >
-            <p class="title is-5 has-text-white-bis has-text-centered">  PMI Agile Hybrid Project Pro</p>
-            <p class="title is-5 has-text-white-bis has-text-centered">(AH-MC)</p>
-            <figure>
-                <a href="https://www.credly.com/badges/11545e61-693d-4335-8abc-e0b6f3dc1fbf">
-              <img src="PMI_AHPP.png" width = "275" height = "275">
-            </a>
-        </figure>
-        <br>
-        <br>
-                  <p class="title is-6 has-text-white-bis has-text-centered">Issued Mar 2022 - No Expiry</p>
-          </div>
-          <div style = "background-color: 	darkslateblue;" class="column has-text-centered">
-            <p class="title is-5 has-text-white-bis has-text-centered">PMI Agile Metrics</p>
-            <p class="title is-5 has-text-white-bis has-text-centered">(AH-MC)</p>
-            <figure>
-               <a href="https://www.credly.com/badges/ce231a8c-6bde-42e1-bbff-94eb5e7b0808">
-              <img src="PMI_AM_MC.png" width = "310" height = "310">
-            </a>
-        </figure>
-        <br>
-        <br>
-                  <p class="title is-6 has-text-white-bis has-text-centered">Issued Apr 2022 - No Expiry</p>
-                
-          </div>
-          <div style = "background-color: 		deepskyblue;"class="column has-text-centered">
-            <p class="title is-5 has-text-white-bis has-text-centered">PMI Citizens Developer Practitioner</p>
-            <p class="title is-5 has-text-white-bis has-text-centered">(CD-P)</p>
-            <figure>
-               <a href="https://www.credly.com/badges/0c8121d0-1c57-43ce-8a1c-46cadabe8d7c/public_url">
-              <img src="CD_P.png" width = "300" height = "300">
-            </a>
-        </figure>
-        <br>
-                  <p class="title is-6 has-text-white-bis has-text-centered">Issued Jun 2022 - No Expiry</p>
-          </div>
-          <div style = "background-color: 	chocolate;"class="column has-text-centered">
-            <p class="title is-5 has-text-white-bis has-text-centered">PMI Certified Associate in Project Management </p>
-            <p class="title is-5 has-text-white-bis has-text-centered"> (CAPM®) </p>
-            <figure>
-              <a href="https://www.credly.com/badges/8295eb52-f2e5-4426-8a74-ace4e5f655ba/public_url">
-              <img src="capm.png">
-                </a>
-                  <p class="title is-6 has-text-white-bis has-text-centered">Issued Oct 2022 - Expires Oct 2025</p>
-                    
-                </figure>
-          </div>
-           <div style = "background-color: 	DarkOrange;"class="column has-text-centered">
-            <p class="title is-5 has-text-white-bis has-text-centered"> Professional Scrum Master I</p>
-            <p class="title is-5 has-text-white-bis has-text-centered"> (PSM I) </p>
-            <figure>
-         <a href="https://www.credly.com/badges/0c68a998-5473-463e-b499-97d233396014/public_url">
-              <img src="psmi.png">
-                </a>
-                  <p class="title is-6 has-text-white-bis has-text-centered">Issued May 2023 - No Expiry</p>
-        
-                </figure>
-          </div>
-          <div style = "background-color: 	steelblue;"class="column  has-text-centered">
-            <p class="title is-5 has-text-white-bis has-text-centered">PMI Project Management Professional</p>
-            <p class="title is-5 has-text-white-bis has-text-centered">(PMP)</p>
-            <figure>
-             
-              <img src="coming_soon.png">
-                  <p class="title is-6 has-text-white-bis has-text-centered">Stay Tuned!</p>
-                </figure>
-          </div>
-        </div>
-        <br>
-    </div>
-      </div>
-<br>
-    <div style = "background-color: 		rgba(85, 107, 47, 0.493);" class="box">
-       <h1 class="title has-text-white-bis" id="Projects">Compilation of Projects</h1>
-       <div  style = "background-color: 	lavender;" class="box">
-       <h1 class="subtitle has-text-black-bis">The following is a compilation of projects that I have completed over the years. This includes development projects as well as my current project management Projects. For Development work samples, please click the link associated with the project or the Github links at the top of the page. </h1>
-    </div>  
-    </div>
-
-   <div style = "background-color: 		lightslategrey;" class="box ">
-       <h1  id="DevProjects" class="title has-text-white-bis"> Development Projects  <a class="button has-text-weight-medium has-text-black-bis is-rounded is-focused" id = "topbutton" href="#home" style="float: right; background-color: 	rgb(255, 194, 41);"> Back to Top</a></h1>
-       <div  style = "background-color: 	lavender;" class="box"> 
-      <div class="tile is-ancestor">
-     <div class="tile">
-      <div class="tile is-parent is-vertical">
-          
-        <article style = "background-color: 	palevioletred;"class="tile is-child box">
-            <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">Miro Minute - Summer Series - June 2022 - August 2022</p>
-           <div class="content has-text-white-bis has-text-weight-medium">
-            <p class="has-text-weight-bold is-underlined has-text-white-bis">Technologies/Languages used: </p>
-            <ul>
-              <li>Python</li>
-              <li>Json</li>
-              <li>VScode</li>
-              <li>Slack API</li>
-            </ul>
-            <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-            <p>These scripts were developed during the Miro Product Implementation. I created these scripts as a way to create passive information for the implementation in order to increase product adoption. I used these scripts within a Slack Application called the Miro Machine, that would deploy each Monday at 9:00am to provide Miro tips to the user's Slack channel.   </p>
-            <p><a class = "has-text-warning-light is-underlined has-text-weight-bold"  href="https://github.com/Madison-Everett/Slack_Bot_Miro_Machine">Check out the repo here!</a></p>
-      </div>
-      </article>
-        <article style = "background-color: 	rgba(255, 166, 0, 0.846);" class="tile is-child box">
-          <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">Machine-Learning Settlement/Failure project at UBS (United Bank of Switzerland) - June 2019</p>
-          <div class="content has-text-white-bis has-text-weight-medium">
-            <p class="has-text-weight-bold is-underlined has-text-white-bis">Technologies/Languages used: </p>
-            <ul>
-              <li>Python</li>
-              <li>Pandas</li>
-              <li>Matplotlib</li>
-              <li>Tensorflow</li>
-              <li>NumPy</li>
-            </ul>
-            <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-            <p>This project was developed during my 10 week internship at UBS. The goal of this project was to create a machine-learning model that could predict whether or not a financial trade would settle or fail. In order to create training data, I had access to one of UBS’s many trading databases that contained CID (Client Identifying Data) (which is one of the reasons why I do not have access to the repo &#128577;) and several attributes that could contribute to whether or not a trade was going to settle or fail. 
-              <p>In order to target which trades would fail, I first gathered info from the various subject matter experts around the office in order to pinpoint exactly where trades could go wrong. Secondly, I created a correlation matrix using Pandas and Matplotlib in order to see the correlation of attributes that lead to a failure. From there, I developed my machine learning model into a classification model using the Tensorflow Library and numPy and created my training and test data. This took about 4 weeks. On the first model run, the model performed at 40% accuracy, which was pretty low to start, but all models start somewhere. With longer training sessions, by the end of the 10 weeks, the model performed at 85% accuracy, which was an excellent improvement. </p>
-            </p>
-          
-      </div>
-        </article>
-      </div>
-</div>
-   <div class="tile">
-      <div class="tile is-parent is-vertical">
-        <article style = "background-color: 	mediumseagreen;" class="tile is-child box">
-          <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">SVD-NMF - Topic Extraction - Jan 2020</p>
-         <div class="content has-text-white-bis has-text-weight-medium">
-          <p class="has-text-weight-bold is-underlined has-text-white-bis">Technologies/Languages used: </p>
-          <ul>
-            <li>Python</li>
-            <li>Scikit-learn</li>
-            <li>Sklearn</li>
-            <li>Jupyter Notebook</li>
-            <li>MATLAB</li>
-          </ul>
-          <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-          <p>This project was an exploration in Text Mining comparing matrix decomposition methods, <a class = "has-text-warning-light is-underlined has-text-weight-bold"  href="https://en.wikipedia.org/wiki/Singular_value_decomposition">Singular Value Decomposition (SVD)</a>  and <a class = "has-text-warning-light is-underlined has-text-weight-bold"  href="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">Nonnegative Matrix Factorization (NMF)</a> to see which method performed better in summarizing a large collection of texts.  </p>
-          <p>In order to perform this exploration, I used the Scikit-learn and Sklearn framework that contain dummy sets of text data as the corpus of text for the methods. In order to evaluate and compare these methods, I gathered the general topic extraction results, in addition to the results of the two above methods and displayed them in Word Clouds using MATLAB. As a result, it seemed that the NMF method performed similarily to the general topic extraction than SVD, which means that the NMF performs more closely to a human than SVD.</p>
-        <p><a class = "has-text-warning-light is-underlined has-text-weight-bold"  href="https://github.com/sisterme3/SVD-NMF-topic-extraction">Check out the repo here!</a></p>
-      </div>
-        </article>
-        <article style = "background-color: 	firebrick;" class="tile is-child box">
-          <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">Data Science projects using Python and SQL - Feb 2020</p>
-         <div class="content has-text-white-bis has-text-weight-medium">
-          <p class="has-text-weight-bold is-underlined has-text-white-bis">Technologies/Languages used: </p>
-          <ul>
-            <li>Python</li>
-            <li>Beautiful Soup</li>
-            <li>Pandas</li>
-            <li>Matplotlib</li>
-            <li>Requests</li>
-          </ul>
-          <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-          <p>	This is a collection of Data Science Jupyter Notebooks that explore different data projects and uses of data science in day-to-day life.</p>
-          <p>Some of these projects include:</p>
-          <ul>
-            <li>Web Scraping various websites to gather data</li>
-            <li>Using Pandas to describe various data through graphs</li>
-            <li>Analyzing Housing data</li>
-            <li>Analyzing Demographic data in School Systems</li>
-          </ul>
-        <p><a class = "has-text-warning-light is-underlined has-text-weight-bold"  href="https://github.com/sisterme3/Data_Science">Check out the repo here!</a></p>
-      </div>
-        </article>
-      </div>
-</div>
-<div class="tile">
-      <div class="tile is-parent is-vertical">
-        <article style = "background-color: 	chocolate;" class="tile is-child box">
-          <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">Python Document Migration for VERA using SQL and APIs - Feb 2021-Oct 2021</p>
-          <div class="content has-text-white-bis has-text-weight-medium">
-          <p class="has-text-weight-bold is-underlined has-text-white-bis">Technologies/Languages used: </p>
-          <ul>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Xlwt</li>
-            <li>Xlsxwriter</li>
-            <li>Base64</li>
-            <li>Requests</li>
-            <li>Json.decoder</li>
-          </ul>
-          <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-          <p>These scripts are from the Data Migration phase of the VERA project. This phase consisted of pulling historical and current data from the current Grants and Agreement system and loading it into the new system using a SFTP server. My task was to pull all PDF files from the Agreement system in order to have them ready for the new system. I completed this task by creating SQL to pull the file names and unique file ids of the files that we needed. 
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+    <section class="hero">
+      <div class="hero-body">
+        <p class="subtitle is-2  is-centered" style ="text-align: center; font-size: 50px; color:black">
+          Madison Everett &#129300; &#128173;
         </p>
-        <p>This step had to be done first since the only way to pull the pdfs was through a custom built API that required a “get” containing the document id from the db and the bearer token. From there, I decoded the files using json and base64 and saved the pdfs in a folder system (“<a class = "has-text-warning-light is-underlined has-text-weight-bold" href=https://github.com/Madison-Everett/Python_Data_Migration_VERA/blob/main/Agreement%20Migration%20Code/For%20final%20copies%2004-27-2021.py>For Final copies___</a>" scripts) with the file names that I pulled from the db to prepare them for the new Agreements system. In addition to this, I also had to update a db table in order to keep the files organized for the import into the new system (“<a class = "has-text-warning-light is-underlined has-text-weight-bold" href=https://github.com/Madison-Everett/Python_Data_Migration_VERA/blob/main/Agreement%20Migration%20Code/filepath-04-05.py>filepath___</a>" scripts).  I performed this task over 8 months in batches since this process needed to be refined for go live in Oct 2021 and the PDF data was needed for UAT, which began in February 2021.</p>
-        <p><a class = "has-text-warning-light is-underlined has-text-weight-bold"  href="https://github.com/Madison-Everett/Python_Data_Migration_VERA">Check out the repo here!</a></p>
+      
       </div>
-        </article>
-        <article style = "background-color: 	cornflowerblue;"class="tile is-child box">
-          <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">Portfolio Website - January 2022 - August 2022</p>
-         <div class="content has-text-white-bis has-text-weight-medium">
-          <p class="has-text-weight-bold is-underlined has-text-white-bis">Technologies/Languages used: </p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>VScode</li>
-            <li>Bulma Framework</li>
-          </ul>
-          <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-          Since this is something that I created, I decided to also include this website. This website was created using a new CSS framework called Bulma  and took a little more than 1 week to create. It’s been a little while since I’ve played around with web languages, but this was a fun little exercise.</p>
-          <p><a class = "has-text-warning-light is-underlined has-text-weight-bold"  href="https://github.com/Madison-Everett/PM_Portfolio">Check out the repo here!</a></p>
-      </div>
-        </article>
-        
-       </div>
+    </section>
+<div class="tabs is-centered" style="background-color: rgb(255,224,137)">
+  <ul>
+    <li class="is-active"><a href ="Home.html" style="font-size: 20px;">Home &#127969;</a></li>
+    <li><a href ="About.html" style="font-size: 20px;">About &#128172;</a></li>
+    <li><a href ="Projects.html" style="font-size: 20px;">Projects &#128194;</a></li>
+    <li><a href ="https://www.linkedin.com/in/madison-everett-966071139/" target="_blank" style="font-size: 20px;">LinkedIn &#128232;</a></li>
+    <li><a href ="Madison_Everett_Resume_2023.pdf" target="_blank" style="font-size: 20px;">Resume &#128196;</a></li>
+  </ul>
+</div>
+<br>
+
+<section class="hero is-centered" style="text-align:center">
+  <figure>
+    <img style = "width:30%;" class="circular--square" src="Linkedin Photo.jpeg">
+    <div class="content is-large is-centered" style="text-align:center">
+      <br>
+        <p style="text-align:center">
+          Hello there! &#128075;&#127998; Welcome to my Portfolio. <br> Please take a look around and check out some of my certifications below! </p>
     </div>
-</div>
- </div>
+     </figure>
+</section>
 
-  <div style = "background-color: 		lightslategrey;" class="box">
-     <h1 id="PMProjects" class="title has-text-white-bis"> Project Management Projects  <a class="button has-text-weight-medium has-text-black-bis is-rounded is-focused" id = "topbutton" href="#home" style="float: right; background-color: 	rgb(255, 194, 41);"> Back to Top</a> </h1>
-     <div  style = "background-color: 	lavender;" class="box"> 
-       
-        <div class="tile">
-            <div class="tile is-parent is-vertical">
-              <article style = "background-color: 	palevioletred;" class="tile is-child box ">
-                <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold"> <a class = "has-text-link-light is-underlined" href="https://news.vanderbilt.edu/2021/12/15/vera-implementation-making-progress-meeting-challenges-through-teamwork-partnerships"> Vanderbilt Electronic Research Administration(VERA) Inital Deployment</a> - June 2020-Oct 2021</p>
-                <div class="content has-text-white-bis has-text-weight-medium">
-                  <p class="has-text-weight-bold is-underlined has-text-white-bis">Skills used: </p>
-                <ul>
-                  <li>Monday.com</li>
-                  <li>Jira</li>
-                  <li>Confluence</li>
-                  <li>Requirements Gathering</li>
-                  <li>Change Management</li>
-                  <li>A/B Testing</li>
-                  <li>Agile/Scrum</li>
-                  <li>Kanban</li>
-                </ul>
-                <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-              <p>This is one of the first projects where I served as a Project Manager at Vanderbilt University. This project was sponsored by the Provost of Research at Vanderbilt University and its goal was to combine the current Grants and Contracts systems (COEUS and PEER) into one comprehensive system with the help of our vendor, Huron Consulting Group. This project affected the entire Grants and Contracts community, which included around 500+ faculty and staff members. It also had over 50+ high impact stakeholders from across Vanderbilt University departments.
-            </p>
-            <p>This scope of this project included: </p>
-            <ul>
-              <li>Data Migration</li>
-              <li>Custom Built reports that connect to the VU Data Warehouse</li>
-              <li>Customizations to Smartforms</li>
-              <li>Integration with our post-award Oracle system</li>
-              <li>Integration with our homegrown COI system</li>
-            </ul>
-            </div>
-              </article>
-           
-
-                <article style = "background-color: 	blueviolet;" class="tile is-child is-vertical box ">
-                    <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold"> Vanderbilt Electronic Research Administration(VERA) Phase 2 - Oracle Integration - June 2020-Oct 2021</p>
-                    <div class="content has-text-white-bis has-text-weight-medium">
-                      <p class="has-text-weight-bold is-underlined has-text-white-bis">Skills used: </p>
-                    <ul>
-                      <li>Monday.com</li>
-                      <li>Jira</li>
-                      <li>Confluence</li>
-                      <li>Requirements Gathering</li>
-                      <li>Test Driven Development</li>
-                      <li>Behavior Driven Development</li>
-                      <li>Quality Control</li>
-                      <li>Quality Assurance</li>
-                    </ul>
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-                  <p>This is phase 2 of the VERA Implementation to integrate our post-award Oracle system with our current implementation of VERA. Despite being a part of the same project, this sub project focuses on a different cross-functional team and around 20+ additional stakeholders (added to the initial 50) from across various Vanderbilt University departments, such as Research Finance and Sponsored Programs Administration. 
-                </p>
-                <p>This scope of this project included: </p>
-                <ul>
-                  <li>Data Migration</li>
-                  <li>Custom Built reports that connect to the VU Data Warehouse</li>
-                  <li>Customizations to Smartforms</li>
-                  <li>Integration with our post-award Oracle system</li>
-                  <li>Integration with our homegrown COI system</li>
-                </ul>
-                </div>
-                  </article>
-
-                  <article style = "background-color: 		coral;" class="tile is-child box">
-                    <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">SPA (Sponsored Programs Administration) Data Warehouse Reporting Refactoring and Redeployment - Dec 2021 - Present</p>
-                   <div class="content has-text-white-bis has-text-weight-medium">
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Skills used: </p>
-                    <ul>
-                      <li>Confluence</li>
-                      <li>Oracle BI</li>
-                      
-                    </ul>
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-                  <p>This is a sub project related to the major VERA project. The goal of this project was to find a way to fully integrate the data between 3 systems. The new VERA system, the older COEUS System and the older PEER System. The need of this project was to simplify the process of updating important Federal Reports, such as FFATA. Before initiating this project, SPA data analysts would have to manually combine data from 3 systems in order to build a report that would meet Federal requirements, which took up a lot of their time for yearly, semi quarter reports. In this project, I served as an assistant Project Manager to help with team blockers and impediments.   
-                  </p>
-                  </article>
-       
+<br>
+<section class="hero is-warning" style="text-align: center;">
+  <div class="hero-body">
+    <h2 class="title is-2">Certifications</h2>
+  </div>
+</section>
 
 
-            </div>
+<br>
+<br>
 
-            <div class="tile is-parent is-vertical">
-                <article style = "background-color: 		cornflowerblue;" class="tile is-child box ">
-                  <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">Destiny One - Nov 2021-Present</p>
-                  <div class="content has-text-white-bis">
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Skills used: </p>
-                    <ul>
-                      <li>Monday.com</li>
-                      <li>Problem-Solving</li>
-                      <li>Requirements Gathering</li>
-                      <li>Purposeful Communication</li>
-                      <li>Change Management</li>
-                    </ul>
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-                <p>This project is Vanderbilt’s Continuing Education platform. In other words, this platform is a Modern Campus instance that holds and manages classes that are outside of Vanderbilt’s regular curriculum. This platform contains classes, such as <a class = "has-text-warning-light is-underlined" href="https://pty.vanderbilt.edu/">PTY (Programs for Talented Youth)</a>  courses, <a class = "has-text-warning-light is-underlined" href = "https://www.vanderbilt.edu/olli/">OLLI (Osher Lifelong Learning Institute) </a> courses, and <a class = "has-text-warning-light is-underlined" href = "https://my.vanderbilt.edu/nashvillemathclub/"> Nashville Math Club </a> courses. 
-                </p>
-                <p>My role in this project consists of being the Product Owner/Manager for any enrollment updates, course/section requests, user access requests, etc for that are designated by our Stakeholders. </p>
-              </div>
-                </article>
-                <article style = "background-color: 	firebrick;" class="tile is-child box ">
-                    <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">Interfolio Faculty Search/Promotion & Tenure - Oct 2021-Present</p>
-                   <div class="content has-text-white-bis">
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Skills used: </p>
-                    <ul>
-                      <li>Monday.com</li>
-                      <li>Problem-Solving</li>
-                      <li>Requirements Gathering</li>
-                      <li>Purposeful Communication</li>
-                      <li>Change Management</li>
-                    </ul>
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-                  <p>This project is Faculty Affairs related, similar to FIS. but focuses mainly on the faculty hiring, promotion, and tenure aspect. This platform allows for department admins and department chairs to designate a hiring/promotion process within the application for their particular department. This platform also allows faculty members to search appointments of faculty as well as set up and document faculty committee reviews as well.
-                  </p>
-                  <p>My role in this project consists of being the Product Owner/Manager for any updates or improvements that departmental admins or Faculty Affairs staff bring to our attention. After organizing and evaluating the changes, I communicate these updates to our vendor’s development team in order to update the system. </p>
-                </div>
-                  </article>
-
-                  <article style = "background-color: 		MediumTurquoise;" class="tile is-child box">
-                    <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">FIS - Faculty Information System: - Oct 2021-Present</p>
-                   <div class="content has-text-white-bis has-text-weight-medium">
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Skills used: </p>
-                    <ul>
-                      <li>Monday.com</li>
-                      <li>Jira</li>
-                      <li>Confluence</li>
-                      <li>Requirements Gathering</li>
-                      <li>A/B Testing</li>
-                      <li>Agile/Scrum</li>
-                      <li>Kanban</li>
-                    </ul>
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-                  <p>This project is Vanderbilt’s Faculty Information System. It holds demographic appointment data for VU and VUMC faculty, such as Appointments (Current job title/roles), ID, SSN, Salary, etc. The system serves as the “Source of Truth” for other systems that require faculty data, such as VERA.  
-                  </p>
-                  <p>My role in this project consists of being the Product Owner/Manager for any updates, changes, testing that are designated by our Stakeholders, Faculty Affairs, and communicating those changes to the Vanderbilt Web App Group (WAG) through Jira. </p>
-              </div>  
-                  </article>
-
-            </div>
-
-            <div class="tile is-parent is-vertical">
-                <article style = "background-color: 		rgb(200, 171, 6);" class="tile is-child box">
-                    <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">GAP (Graduate and Post-Docs) 2.0 Implementation - Oct 2021 - Present</p>
-                   <div class="content has-text-white-bis has-text-weight-medium">
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Skills used: </p>
-                    <ul>
-                      <li>SQL Developer</li>
-                      <li>Confluence</li>
-                      <li>Requirements Gathering</li>
-                      <li>A/B Testing</li>
-                    </ul>
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-                  <p>This project is a revamp of the Vanderbilt School of Medicine’s current Graduate and Post Docs application. The current application allows SOM admin to keep track of Graduate students’ appointments, programs and Faculty mentors.   
-                  </p>
-                  <p>The goal of the GAP 2.0 is to refresh the data import to include more data about Graduate Students and provide a more robust data keeping option by using live SQL developer tables rather than a weekly feed, like GAP 1.0. 
-                </p>
-              </div>  
-                  </article>
-                  <article style = "background-color: 		Peru;" class="tile is-child box">
-                    <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">Miro Product Implementation - May 2022 - Present</p>
-                   <div class="content has-text-white-bis has-text-weight-medium">
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Skills used: </p>
-                    <ul>
-                      <li>Python</li>
-                      <li>Confluence</li>
-                      <li>Miro</li>
-                      <li>Change Management</li>
-                    </ul>
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-                  <p> This project is an implementation of the Miro Digital Whiteboarding product for the PSI Team. I served as one of the leading Project Managers for this implementation.
-                  <p>The goal of this implementation was 85% product adoption across the team in order to increase team productivity and performance. This was achieved by planning and managing help sessions and information conferences with the team to encourage product adoption. In addition to help sessions, I created a personalized Slack bot to post Miro tips, called the Miro Minute, in the team's Slack channel for passive information.
-                </p>
-              </div>  
-                  </article>
-                  <article style = "background-color: 		SeaGreen;" class="tile is-child box">
-                    <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">School of Medicine (SOM) BRET 2021-2022 Training Faculty Project - April 2022 - June 2022</p>
-                   <div class="content has-text-white-bis has-text-weight-medium">
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Skills used: </p>
-                    <ul>
-                      <li>Jira</li>
-                      <li>Confluence</li>
-                      <li>SQL Developer</li>
-                      <li>Dbvisualizer</li>
-                    </ul>
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-                  <p>This project is a revamp of the existing Faculty Profile built WAG (Web Application Group) App for BRET (Biomedical Research Education and Training) faculty.    
-                  </p>
-                  <p>The goal of this project is to embed a new query from the BRET db that will display a subset of the faculty members that are tagged “BRET training faculty members for the 2021-2022 year.” This in turn will make the website more intuitive to summer students who are looking for labs in which to perform summer research. 
-                </p>
-                <p>In this project, I served as an Assistant Project Manager to elicit requirements and creating a project plan to discuss with our development team. 
-                </p>
-              </div>  
-                  </article>
-                  <article style = "background-color: 		Sienna;" class="tile is-child box">
-                    <p class="subtitle has-text-white-bis has-text-centered has-text-weight-bold">Sunsetting of COEUS and PEER Data Archival Project - June 2022 - Nov 2022</p>
-                   <div class="content has-text-white-bis has-text-weight-medium">
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Skills used: </p>
-                    <ul>
-                      <li>Sharepoint</li>
-                      <li>Confluence</li>
-                      <li>Dbvisualizer</li>
-                      <li>Python</li>
-                      <li>SQL</li>
-                    </ul>
-                    <p class="has-text-weight-bold is-underlined has-text-white-bis">Project Description:</p>
-                  <p>This project's purpose was to develop an File Archival System to archive the historical Grants and Award data from the obsolete COEUS and PEER systems, in case of future federal audits.    
-                  </p>
-                <p>In this project, I served as an Project Manager to elicit requirements and creating a project plan to discuss with our development team. 
-                </p>
-              </div>  
-                  </article>
-
-
-
-
-
-
-                </div>
-</div>
-
-
- </div>
-</div> 
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification" style="text-align: center;">
+          <p class="title is-5">Certifed Associate in Project Management<br> (CAPM)</p>
+          <a href="https://www.credly.com/badges/8295eb52-f2e5-4426-8a74-ace4e5f655ba/public_url"> <img src="capm.png" alt="Certifed Associate in Project Management" style="width:50%"></a> 
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification" style="text-align: center;">
+          <p class="title is-5">Professional Scrum Master I <br>(PSI I)</p>
+          <a href="https://www.credly.com/badges/0c68a998-5473-463e-b499-97d233396014/public_url"><img src="psmi (1).png" alt="Professional Scrum Master I (PSI I)" style="width:50%"></a>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification" style="text-align: center;">
+      <div class="content">
+        <p class="title is-5">Project Management Professional<br> (PMP)</p>
+        <a><img src="coming_soon.png" alt="Project Management Professional (PMP)" style="width:50%"></a>
+      </div>
+    </article>
   </div>
 </div>
-  </section>
+
+
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification" style="text-align: center;">
+          <p class="title is-5">PMI Agile Hybrid Project Pro<br> (AH-MC)</p>
+          <a href="https://www.credly.com/badges/11545e61-693d-4335-8abc-e0b6f3dc1fbf"> <img src="PMI_AHPP.png"  alt="PMI Agile Hybrid Project Pro (AH-MC)" style="width:50%"></a>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification" style="text-align: center;">
+          <p class="title is-5">PMI Agile Metrics<br> (AM - MC)</p>
+          <a href="https://www.credly.com/badges/ce231a8c-6bde-42e1-bbff-94eb5e7b0808"> <img src="PMI_AM_MC.png" alt="PMI Agile Metrics (AM - MC)"  style="width:50%"></a>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification" style="text-align: center;">
+      <div class="content">
+        <p class="title is-5">PMI Citizen's Developer Practitioner <br>(CD-P)</p>
+        <a href="https://www.credly.com/badges/0c8121d0-1c57-43ce-8a1c-46cadabe8d7c/public_url" > <img src="CD_P.png" alt="PMI Citizen's Developer Practitioner (CD-P)" style="width:50%"> </a>
+      </div>
+    </article>
+  </div>
+</div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Made with &#128151 <br>Madison Everett @ 2023
+      </p>
+    </div>
+  </footer>
   </body>
-  <footer style = "background-color: 	lavender;" class="footer">
-              
-  <div class="content has-text-centered">
-    <p>
-        
-        <b class="has-text-black-bis"> Madison Everett © 2022</b>.
-    </p>
-  </div>
- 
-</footer>
 </html>
